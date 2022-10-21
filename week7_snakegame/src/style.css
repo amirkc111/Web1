@@ -1,0 +1,104 @@
+body{
+	background-image: url("../Image/grass.jpg");
+}
+h1{
+	text-align: center;
+	font-family: chiller;
+	
+}
+#container{
+	text-align: center;
+
+}
+#board{
+	border: 5px solid;
+
+}
+#scoreText{
+	font-family: chiller;
+	font-size: 150px ;
+position: fixed;
+left:85%;
+top: 20%;
+}
+#resetButton{
+	font-family: chiller;
+	font-size: 50px ;
+	width :125px;
+	height: 65px;
+	border: 5px solid;
+	border-radius: 20px;
+	cursor: pointer;
+	position: fixed;
+left:85%;
+top: 80%;
+
+}
+.shead{
+	background: url(../Image/head.png);
+	background-size: 100% 100%
+}
+.sbody{
+	background: url(../Image/body.png);
+	background-size: 100% 100%
+}
+.stail{
+	background: url(../Image/tail.png);
+	background-size: 100% 100%
+}
+.apple{
+	background: url(../Image/apple.png);
+	background-size: 100% 100%
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+main {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-family: 'chiller', monospace;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  font-size: 5rem;
+  background: linear-gradient(to bottom, #000, #000 60%, #fff 60%, #fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-repeat: no-repeat;
+  transition: background 0.2s ease-out;
+  white-space: nowrap;
+}
+
+span {
+  position: relative;
+}
+
+span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background: #000;
+  bottom: 9px;
+  transition: all 0.2s ease-out;
+}
+
+p:hover {
+  background-position: 0 11px;
+}
+
+span:hover:before {
+  transform: translateY(10px)
+}
